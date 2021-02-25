@@ -37,6 +37,7 @@ variable "username" {
 variable "ssh_private_key" {
   description = "Private SSH key to connect to the server"
   type        = string
+  sensitive   = true
 }
 
 variable "ssh_public_key" {
